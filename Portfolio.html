@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<script src = "javascript.js"></script>
+	<title>Aarya Burela</title>
+	<link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/gif/png" href="title-icon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+
+    <div onclick = "NavOpen()" class = "initial-hamburger">
+            <div class = "initial-bar1"></div>
+            <div class = "initial-bar2"></div>
+            <div class = "initial-bar3"></div>
+    </div>
+
+	<div id = "navigation">
+		<ul>
+            <li class = "open"><a href="#home-background" class = "home active">HOME</a></li>
+            <li class = "open"><a href="#aboutme-background" class = "about active">ABOUT</a></li>
+            <li class = "open"><a href="#experiences-background" class = "experience active">EXPERIENCE</a></li>
+            <li class = "open"><a href="#contact-background" class = "contact active">CONTACT</a></li>
+        </ul>
+        <div onclick = "NavClose()" class = "hamburger">
+            <div class = "bar1"></div>
+            <div class = "bar2"></div>
+            <div class = "bar3"></div>
+        </div>
+    </div>
+
+    <script>
+    	let navigation = document.getElementById("navigation");
+
+        function NavClose(){
+	        navigation.style.right = "-80px";
+	        navigation.style.transition = "all 0.3s ease";
+        }
+
+        function NavOpen(){
+        	navigation.style.right = "0px";
+        	navigation.style.transition = "all 0.3s ease";
+        }
+
+    </script>
+
+    <!--HOME-->
+
+    <div id = "home-background" class = "home-container">
+	    <div class = "home-item1">
+	        <div class = "element">
+	        	<img src = "my-icon.svg" id = "my-icon">
+	        	<h1 id = "hello">HELLO</h1>
+	        	<h2 id = "name">I'm Aarya</h2>
+	        	<p id = "intro">A web Designer and Developer<br>Sophomore at BITS Pilani.</p>
+	        	<div class = "connect-background">
+	        	    <a class = "connect" href = "https://www.linkedin.com/in/aarya-burela-a30204208">GET IN TOUCH</a>
+	        	</div>
+	        	<a class="fa fa-linkedin" href = "https://www.linkedin.com/in/aarya-burela-a30204208" style="font-size:15px;color:white"></a>
+	        	<a class="fa fa-facebook" href = "https://www.facebook.com/aarya.burela/" style="font-size:15px;color:white"></a>
+	        	<a class="fa fa-instagram" href = "https://www.instagram.com/aaryaburela/" style="font-size:16px;color:white"></a>
+	        	<a class="fa fa-behance" href = "https://www.behance.net/aaryaburela2" style="font-size:14px;color:white"></a>
+	        	<a class="fa fa-github" href = "https://github.com/AaryaBurela02" style="font-size:17px;color:white"></a>
+	        </div>
+        </div>
+
+        <div class = "home-item2">
+            <div id = "image"></div>
+            <div id = "glimpse">
+            	<p>A sophomore highly interested in exploring different fields related to coding and technical stuff. I am into UI/UX designing, web development and Automobile Engineering. Basically, I love designing and coding simple things beautifully. Presently, I am pursuing Bachelor of Engineering in Mechanical branch from BITS Pilani, Pilani campus.</p>
+    	        <div class = "resume-background">
+    	            <a class = "resume" href = "https://drive.google.com/file/d/1F94f9ZNgjlDQB8Mw-Y3InYygyRXATppK/view?usp=sharing">VIEW RESUME</a>
+    	        </div>
+            </div>
+        </div>
+    </div>
+
+    <a><img src = "aboutme-illustration.svg" id = "aboutme-illustration"></a>
+    
+    <div id = "aboutme-background">
+    	<div class = "heading-container">
+    	    <a id = "aboutme-box"></a>
+    	    <p id = "aboutme">ABOUT ME</p>
+    	</div>
+    	<p id = "aboutme-para">Hey there! This is Aarya Burela, a sophomore at BITS Pilani, Rajasthan. They call me a 'Techie', as I always put interest in exploring different fields of Technology. UI/UX designing, Web Development and Automobile Engineering always excites me in technological fields. I strive for the perfection and quality of the end product. I work in building things beautifully with at most perfection and care. Apart from the fields related to technology, I am also into dance, swimming, athletics and graphic designing.</p> 
+    </div>
+
+    <!--INTERESTS-->
+
+    <div class = "interests">
+        <div class = "ui-ux">
+    		<img src = "interests/interest-1.svg" id = "interests-image1">
+    		<p class = "interests-heading">WEB DESIGNING</p>
+    		<p class = "interests-description">I love designing things beautifully with a pinch of simplicity and perfectness.</p>
+    		<p class = "interests-tools">Things I design:</p>
+    		<p class = "tools-list">App,Web,Poster,Illustrations</p>
+    		<p class = "interests-softwares">Softwares</p>
+    		<p class = "softwares-list">Illustrator<br>Figma<br>Photoshop</p>
+    	</div>
+
+        <div class = "web-development">
+    		<img src = "interests/interest-2.svg" id = "interests-image2">
+    		<p class = "interests-heading">WEB DEVELOPMENT</p>
+    		<p class = "interests-description">I enjoy in building websites from the scratch and in giving life to my designs.</p>
+    		<p class = "interests-tools">Languages I speak:</p>
+    		<p class = "tools-list">HTML,CSS,JS,React.js</p>
+    		<p class = "interests-softwares">Softwares</p>
+    		<p class = "softwares-list">Sublime Text<br>Brackets<br>Code Pen</p>
+    	</div>
+
+    	<div class = "automobile-engineering" >
+    		<img src = "interests/interest-3.svg" id = "interests-image3">
+    		<p class = "interests-heading">AUTOMOBILE ENGINEERING</p>
+    		<p class = "interests-description">I like designing, researching and manufacturing various automobile parts.</p>
+    		<p class = "interests-tools">Sub-systems I love:</p>
+    		<p class = "tools-list">Steering,Suspension,Braking</p>
+    		<p class = "interests-softwares">Softwares</p>
+    		<p class = "softwares-list">Fusion 360<br>Auto CAD<br>ANSYS</p>
+        </div>
+    </div>
+
+    <!--EXPERIENCES-->
+
+    <div id = "experiences-background">
+    	<div class = "heading-container">
+    	    <a id = "experiences-box"></a>
+    	    <p id = "experiences">EXPERIENCES</p>
+    	</div>
+    	<p id = "experiences-para">Here are my experiences in different fields and various roles of my journey in exploration.
+    	</p> 
+    </div>
+
+    <div class = "experiences-container">
+
+    	<div class = "outer-zoom">
+            <figure class="hover-img experiences-item1 zoom-out" >
+                <img class = "experience-image experience-image-zoom" src="experiences/experience-1.svg"/>
+                <figcaption>
+                    <p class = "experience-text">CS Mock is a one on one live mock interview platform which focuses on computer science related topics</p>
+                </figcaption>
+                <a class = "experience-circle"></a>
+            </figure>
+        </div>
+
+        <div class = "outer-zoom">
+            <figure class="hover-img experiences-item1 zoom-out">
+                <img class = "experience-image experience-image-zoom" src="experiences/experience-2.svg"/>
+                <figcaption>
+                    <p class = "experience-text">Mechanical Engineering Association conducts various workshops, quizes etc in APOGEE and other tech fests</p>
+                </figcaption>
+                <a class = "experience-circle"></a>
+            </figure>
+        </div>
+
+        <div class = "outer-zoom">
+            <figure class="hover-img experiences-item1 zoom-out" >
+                <img class = "experience-image experience-image-zoom" src="experiences/experience-3.png"/>
+                <figcaption>
+                    <p class = "experience-text">Inspired Karters Gravity is a student-run technical team participating in NASA Human Exploration Rover Challenge</p>
+                </figcaption>
+                <a class = "experience-circle"></a>
+            </figure>
+        </div>
+
+
+        <div class = "outer-zoom">
+            <figure class="hover-img experiences-item2 zoom-out">
+                <img class = "experience-image experience-image-zoom" src="experiences/experience-4.svg"/>
+                <figcaption>
+                    <p class = "experience-text">Audiforce is a department that ensures crowd control and maintains order in the auditorium during fests.</p>
+                </figcaption>
+                <a class = "experience-circle"></a>
+            </figure>
+        </div>
+
+        <div class = "outer-zoom">
+            <figure class="hover-img experiences-item2 zoom-out" >
+                <img class = "experience-image experience-image-zoom" src="experiences/experience-5.svg"/>
+                <figcaption>
+                    <p class = "experience-text">SUTT is aimed to develop softwares that cater to the needs of students and college administration alike</p>
+                </figcaption>
+                <a class = "experience-circle"></a>
+            </figure>
+        </div>
+
+        <div class = "outer-zoom">
+            <figure class="hover-img experiences-item2 zoom-out" >
+                <img class = "experience-image experience-image-zoom" src="experiences/experience-6.svg"/>
+                <figcaption>
+                    <p class = "experience-text">Dance Club is an organisation known for producing astral performances every year in front of 2000+ audience</p>
+                </figcaption>
+                <a class = "experience-circle"></a>
+            </figure>
+        </div>
+
+    </div>
+
+    <div class = "view-experiences-background">
+    	<a class = "view-experiences" href = "https://www.linkedin.com/in/aarya-burela-a30204208">VIEW LINKEDIN</a>
+    </div>
+
+    <div class = "line"></div>
+
+    <!--PROJECTS-->
+
+    <div id = "projects-background">
+    	<div class = "heading-container"> 
+    	    <a id = "projects-box"></a>
+    	    <p id = "projects">PROJECTS</p>
+    	</div>
+    	<p id = "projects-para">Here are the projects done by me in different companies and organizations.</p> 
+    </div>
+
+    <div class = "projects-container">
+
+        <!--PROJECT-1-->
+
+    	<div class = "projects-item1">
+    		<p class = "project-number1">01</p>
+    		<p class = "project-heading1">Students' Union App</p>
+    		<div class = "project-line1"></div>
+    		<p class = "project-text1">Students' Union Technical Team is a student-run technical organization at BITS Pilani, which is aimed at encouraging the development of softwares that cater to the needs of the students and college administration alike.<br>The team has decided to build an app which meets all the requirements of the students like food, cab booking, academics, contacts etc. As a UI/UX designer in SUTT, I have contributed in designing the Co-ordinator, Home and login sections of the app.</p>
+    		<div class = "project-view-background1">
+    		    <a class = "project-view1">VIEW WORK</a>
+    		</div>
+    	</div>
+
+    	<div class = "projects-item1">
+    		    <img class = "project-image1" src = "projects/project-1.svg"/>
+    	</div>
+
+    	<!--PROJECT-2-->
+
+    	<div class = "projects-item2">
+    		    <img class = "project-image2" src = "projects/project-2.svg"/>
+    	</div>
+
+
+        <div class = "projects-item2 projects-item2-right">
+    		<p class = "project-number2">02</p>
+    		<p class = "project-heading2">CS Mock Brochure</p>
+    		<div class = "project-line2"></div>
+    		<p class = "project-text2">CS Mock is a startup of IIT Roorkee alumni which provides one on one live mock interviews to Computer Science and Information Technology job aspirants by Industry professionals.<br>CS Mock being a startup needs to build all the basic essentials and necessities for a company like website, app, brochure, posters etc. from the scratch. I have completed my internship in CS Mock as a graphic designer. In this intern I have individually designed official website and brochure of CS Mock.</p>
+    		<div class = "project-view-background2">
+    		    <a class = "project-view2" href = "https://drive.google.com/file/d/1XrlcDRiPsDGDKmysQE9NHwxvWUOOmnKZ/view?usp=sharing">VIEW WORK</a>
+    		</div>
+    	</div>
+
+    </div>
+
+    <div class = "view-projects-background">
+    	    <p class = "view-projects">VIEW MORE</p>
+    </div>
+
+
+
+    <!--MY SKILLS-->
+
+    <div id = "skills-background">
+    	<div class = "heading-container">
+    	    <a id = "skills-box"></a>
+    	    <p id = "skills">MY SKILLS</p>
+    	</div>
+    	<p id = "skills-para">Here are my skills other than web designing, development and automobile.</p> 
+    </div>
+    
+    <div id = "skills-set">
+    <div class = "skills-container">
+    	<div class = "skills-item1">
+    		<img class = "skill-image" src = "skills/skill-1.svg"/>
+    		<div class = "skill-description">
+    			<p class = "skill-heading">DESIGNING</p>
+    			<p class = "skill-text">I have made this skill a hobby as<br>I put interest in designing icons, graphics, illustrations on my own</p>
+    		</div>
+    	</div>
+
+    	<div class = "skills-item1">
+    		<img class = "skill-image" src = "skills/skill-2.svg"/>
+    		<div class = "skill-description">
+    			<p class = "skill-heading">COMPETITIVE CODING</p>
+    			<p class = "skill-text">I solve coding related problems with C language to build and increase my logical thinking power</p>
+    		</div>
+    	</div>
+
+    	<div class = "skills-item1">
+    		<img class = "skill-image" src = "skills/skill-3.svg"/>
+    		<div class = "skill-description">
+    			<p class = "skill-heading">DANCE</p>
+    			<p class = "skill-text">I have a 12 years of experience in this stream. I dance for fitness, enjoyment and to relieve stress</p>
+    		</div>
+    	</div>
+    </div>
+    </div>
+
+    <!--CONTACT-->
+
+    <div id = "contact-background">
+    	<div class = "contact-container">
+    		<div class = "contacts-item1">
+    			<div class = "contact-heading">EDUCATION</div>
+    			<div class = "contact-line"></div>
+    			<div class = "contact-description">BITS Pilani, Pilani<br>FIITJEE Junior College, Vijayawada<br>Oxford School, Guntur</div>
+    		</div>
+
+    		<div class = "contacts-item1">
+    			<div class = "contact-heading">ADDRESS</div>
+    			<div class = "contact-line"></div>
+    			<div class = "contact-description">Brindavan Gardens<br>Guntur District<br>Andhra Pradesh-522006</div>
+    		</div>
+
+
+    		<div class = "contacts-item1">
+    			<div class = "contact-heading">CONTACT ME</div>
+    			<div class = "contact-line"></div>
+    			<div class = "contact-description"><a href = "mailto:aaryaburela2@gmail.com" class = "mail">aaryaburela2@gmail.com</a> <br> <p><a href = "mailto:f20201867@pilani.bits-pilani.ac.in" class = "mail">f20201867@pilani.bits-pilani.ac.in</a></p></div>
+    		</div>
+    	</div>
+
+    	<img src = "title-icon.svg" class = "contact-logo"></img>
+    	<p class = "signing-off">Thats all folks, Thanks for scrolling!</p>
+    	<div class = "contact-socialmedia">
+    		<a class="fa fa-linkedin linkedin" href = "https://www.linkedin.com/in/aarya-burela-a30204208" style="font-size:15px;color:white"></a>
+	        <a class="fa fa-facebook facebook" href = "https://www.facebook.com/aarya.burela/" style="font-size:15px;color:white"></a>
+	        <a class="fa fa-instagram instagram" href = "https://www.instagram.com/aaryaburela/" style="font-size:16px;color:white"></a>
+	        <a class="fa fa-behance behance" href = "https://www.behance.net/aaryaburela2" style="font-size:14px;color:white"></a>
+	        <a class="fa fa-github github" href = "https://github.com/AaryaBurela02" style="font-size:17px;color:white"></a>
+    	</div>
+    </div>
+
+    <div class = "copyright">Designed and Developed by &nbsp
+    	<div class = "tooltip"><strong>Aarya Burela</strong>
+    		<span class = "tooltiptext">Ok, it's actually<br>Burela Chenna Kesava Aarya :)</span>
+    	</div>
+    </div>
+
+
+</body>
+</html>
+

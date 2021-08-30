@@ -1,0 +1,224 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<title>Aarya Burela</title>
+	<link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/gif/png" href="title-icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>	
+	<section id = "title" >
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-4 element">
+					<a><img src = "my-icon.png" id = "my-icon"></a>
+		            <h1 id = "hello">HELLO</h1>
+		            <h2 id = "name">I'm Aarya</h2>
+		            <p id = "intro">A web Designer and Developer<br>Sophomore at BITS Pilani.</p>
+		            <p id = "connect">GET IN TOUCH</p>
+		            <i class="fa fa-linkedin" style="font-size:15px;color:white"></i>
+		            <i class="fa fa-facebook" style="font-size:15px;color:white"></i>
+		            <i class="fa fa-instagram" style="font-size:16px;color:white"></i>
+				</div>
+				<div class = "col-6 image">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+CSS
+
+@font-face{
+	font-family: circularR;
+	src: url('circularR.otf');
+}
+
+@font-face{
+	font-family: circularB;
+	src: url('circularB.otf');
+}
+
+body{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.element{
+	background-image: url('C:/Users/Aarya/Desktop/Portfolio/home.png');
+	background-repeat: no-repeat;
+	height: 585.5px;
+	width: 418.4px;
+	position: relative;
+	margin: 0;
+}
+
+#my-icon{
+	margin: 0;
+	padding-top: 25px;
+	padding-left: 70px;
+
+}
+
+#hello{
+	padding-left: 74px;
+	padding-top: 93px;
+	font-family: circularR;
+	font-size: 16px;
+	color: #3c87f5;
+	font-weight: 900;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+#name{
+	padding-left: 69px;
+	margin: 0;
+	font-family: circularB;
+	color: white;
+	font-size: 83px;
+	letter-spacing: 0px;
+	z-index: 1;
+}
+
+#intro{
+	padding-left: 74px;
+	margin: 0px;
+	padding-top: 15px;
+	font-family: circularR;
+	font-weight: 1;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 0px;
+	z-index: 1;
+}
+
+#connect{
+	border: 1px solid white;
+	color: white;
+	font-size: 10px;
+	margin-left: 74px;
+	margin-top: 32px;
+	font-family: circularR;
+	padding: 13px 10px 12px 10px;
+	width: 90px;
+	text-align: center;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#connect:hover{
+	position: relative;
+	top: -1px;
+}
+
+.fa-linkedin{
+	border: 1.5px solid white;
+	margin-left: 74px;
+	margin-top: 87px;
+	width: 20px;
+	text-align: center;
+	height: 28px;
+	width: 28px;
+	border-radius: 28px;
+	box-sizing: border-box;
+	padding-top: 4.5px;
+	cursor: pointer;
+}
+.fa-linkedin:hover{
+	position: relative;
+	top: -2px;
+}
+
+.fa-facebook{
+	border: 1.5px solid white;
+	margin-left: 10px;
+	margin-top: 2px;
+	width: 20px;
+	height: 28px;
+	width: 28px;
+	border-radius: 28px;
+	box-sizing: border-box;
+	padding-top: 6px;
+	padding-left: 7px;
+	cursor: pointer;
+}
+.fa-facebook:hover{
+	position: relative;
+	top: -2px;
+}
+
+.fa-instagram{
+	border: 1.5px solid white;
+	margin-left: 10px;
+	margin-top: 1px;
+	width: 20px;
+	height: 28px;
+	width: 28px;
+	border-radius: 28px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	padding-left: 5.5px;
+	cursor: pointer;
+}
+.fa-instagram:hover{
+	position: relative;
+	top: -2px;
+}
+
+.image {
+	height: 441px;
+	width: 819px;
+	background-color: black;
+	background-position: left top;
+	z-index: 2;
+	top: 0px;
+	left: 389px;
+}
+
+.row{
+    width=100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.row::after{
+    display:table;
+    clear:both;
+    content:"";
+
+}
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+.container{
+	background-color: black;
+}
